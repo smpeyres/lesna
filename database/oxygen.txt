@@ -1,0 +1,78 @@
+# Oxygen dataset first obtained from Mikhail S Finko et al 2017 J. Phys. D: Appl. Phys. 50 485201
+# The rate coeffs provided in the paper are provided as:
+# s^-1 for first order -> no change
+# cm^3/s^-1 for 2nd order -> multiply by 1e-6
+# cm^6/s^-1 for 3rd order -> multiply by 1e-12
+
+# All values and expressions are written in terms of
+# s^-1, m^3/s^-1, and m^6/s^-1
+
+### Section 1: Obtained from Cross-Section Data 
+
+
+# from ...
+
+em + O2 -> em + O2             : EEDF [elastic] ()
+
+# from [60]
+
+em + Om -> em + em + O         : EEDF [?] ()
+em + O -> em + em + O+         : EEDF [?] ()
+em + O2(1Del) -> em + em + O2p : EEDF [?] ()
+em + O2(1Sig) -> em + em + O2p : EEDF [?] ()
+em + O -> em + O(1D)           : EEDF [?] ()
+em + O -> em + O(1S)           : EEDF [?] ()
+
+# I am not sure what to do with these
+em + O2(1Del) -> O + Om        : ? 
+em + O2(1S) -> O + Om          : ? 
+em + O2 -> O2m                 : ? 
+em + O3 -> O2m + O             : ? 
+em + O3 -> Om + O2             : ?
+# the have cross sections but aren't inelastic!
+
+# from [61]
+
+em + O2m -> em + em + O2       : EEDF [?] ()
+
+# from [62]
+
+em + O2 -> em + em + O2p       : EEDF [?] ()
+em + O2 -> em + O2(v14)        : EEDF [?] ()
+em + O2(v14) -> em + O2        : EEDF [?] ()
+em + O2 -> em + O2(1Del)       : EEDF [?] ()
+em + O2 -> em + O2(1Sig)       : EEDF [?] ()
+em + O2 -> em + O2(4.5)        : EEDF [-4.5] () # I do not like this one
+em + O2 -> em + O + O(1D)      : EEDF [?] ()
+em + O2 -> em + O + O(1S)      : EEDF [?] ()
+em + O2(1Del) -> em + O2       : EEDF [?] ()
+em + O2 -> Om + O              : EEDF [?] ()
+em + O2 -> em + O + O          : EEDF [?] ()
+
+# from [63]
+
+em + O -> Om                   : EEDF [?] ()
+
+
+
+### Section ?: Unclear 
+
+# from [54]
+
+em + O + O2 -> Om + O2         : 1e-43
+em + O3 + O2 -> O3m + O2       : 1e-43 
+
+# from [64]
+
+em + O + O2 -> O + O2m         : 1e-43
+
+
+
+
+### Section 2: Obtained from Experiment 
+
+
+
+
+### Section 3: Obtained by Assumption/Approximation
+
