@@ -228,13 +228,14 @@ COLUMNS: Energy (eV) | Cross section (m2)
 -----------------------------
 
 EXCITATION
-N2 -> N2(rot)
+N2 -> N2(J02)
  1.450000e-3
 SPECIES: e / N2
-PROCESS: E + N2 -> E + N2(rot), Excitation
+PROCESS: E + N2 -> E + N2(J02), Excitation
 PARAM.:  E = 0.00145 eV
 COMMENT: Rotational j=0=>2 (Table 5).
-UPDATED: 2012-10-17 14:25:36
+COMMENT: Edited name to reflect state transition more clearly
+UPDATED: 2022-06-24
 COLUMNS: Energy (eV) | Cross section (m2)
 -----------------------------
  1.450000e-3	0.000000e+0

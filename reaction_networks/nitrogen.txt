@@ -1,0 +1,2 @@
+em + N2 -> em + N2      : EEDF [elastic] 
+em + N2 -> em + N2(J02) : EEDF [-0.00145]
