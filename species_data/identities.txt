@@ -142,6 +142,8 @@ H 0.75
 -------------------
 
 Dissociation Energies (eV)
+Note 1: I think this is regarding ground states and "ground state ions"
+Note 2: This is making me think more about elementary reactions!
 ------------------------
 N2 (N-N) 9.76
 O2 (O-O) 5.12
@@ -255,31 +257,45 @@ N2(V5) 1.41
 N2(V6) 1.76
 N2(V7) 2.06
 N2(V8) 2.35
-N2(A3,SIG,u+) 6.17
-N2(B3,PI,g) 7.35
-N2(W3,DEL,u) 7.36
-N2(Bp3,SIG,u-) 8.16
-N2(C3,PI,u) 11.03
-N2(E3,SIG,g+) 11.88
+
+N2(A3,SIG,u+) 6.17 
+    (FLINDERS,IST-LISBON?,ITIKAWA,PHELPS?)
+N2(B3,PI,g) 7.35 
+    (FLINDERS,IST-LISBON,ITIKAWA.PHELPS)
+N2(W3,DEL,u) 7.36 
+    (FLINDERS,IST-LISBON,ITIKAWA.PHELPS)
+N2(Bp3,SIG,u-) 8.16 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
+N2(C3,PI,u) 11.03 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
+N2(E3,SIG,g+) 11.88 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
 N2(Cp3,PI,u) 12.08
 N2(F3,PI,u) 12.75
 N2(G3,PI,u) 12.80
 N2(D3,SIG,u+) 12.85
 N2(M1(2)) 13.15 
 N2(G3,DEL,g) ???
-N2(ap1,SIG,u-) 8.40
-N2(a1,PI,g) 8.55
-N2(w1,DEL,u) 8.89
-N2(app1,SIG,g+) 12.25
+
+N2(ap1,SIG,u-) 8.40 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
+N2(a1,PI,g) 8.55 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
+N2(w1,DEL,u) 8.89 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
+N2(app1,SIG,g+) 12.25 
+    (FLINDERS,IST-LISBON,ITIKAWA,PHELPS)
 N2(b1,PI,u) 12.5
-N2(bp1,SIG,u+) 12.85
+N2(bp1,SIG,u+) 12.85 
+    (ITIKAWA)
 N2(c1,PI,u) 12.91
-N2(cp1,SIG,u+) 12.94
+N2(cp1,SIG,u+) 12.94 
+    (ITIKAWA)
 N2(o1,PI,u) 13.1
 N2(e1,PI,u) 14.33
 N2(c31,PI,u) ???
 N2(c4p1,SIG,u+) ???
-N2(sum_singlets) 13.00
+N2(sum_singlets) 13.00 
 -----------------------
 
 N2p States
