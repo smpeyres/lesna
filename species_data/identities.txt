@@ -98,11 +98,246 @@ N2O4, Polyatomic, 92.010, 0
 N2O5, Polyatomic, 108.009, 0
 -----------------------------------
 
-Excited Species 
------------------------------
+Data Obtained from Atmospheric Gases Plasma Book
+
+Ionization Potentials (eV)
+-------------------
+N -> Np 14.53 
+O -> Op 13.62
+N2 -> N2p 15.58
+O2 -> O2p 12.08
+NO -> NOp 9.26
+N3 -> N3p 11.5
+O3 -> O3p 12.52
+N2O -> N2Op 12.89
+N4 -> N4p 14.78 
+O4 -> O4p 11.64
+NON2 -> NON2p 9.06
+H -> Hp 13.59
+H2 -> H2p 15.44
+OH -> OHp 13.2
+H2O -> H2Op 12.61
+HO2 -> HO2p 11.5
+H2O2 -> H2O2p 10.9
+NH -> NHp 13.1
+NH2 -> NH2p 11.4
+NH3 -> NH3p 10.17
+N2H2 -> N2H2p 9.85
+N2H3 -> N2H3p 7.9
+----------------------
+
+Electron Affinities (eV)
+-------------------
+O 1.47
+O2 0.44
+NO 0.031
+O3 2.89
+NO2 2.43
+NO3 3.7
+H 0.75
+-------------------
+
+Dissociation Energies (eV)
+------------------------
+N2 (N-N) 9.76
+O2 (O-O) 5.12
+NO (N-O) 6.5
+O3 (O2-O) 1.04
+N2O (N2-O) 1.67
+N2O (N-NO) 4.93
+NO2 (NO-O) 3.11
+NO2 (N-O2) 4.5
+N2p (N-Np) 8.71
+O2p (O-Op) 6.66
+NOp (N-Op) 10.85
+NOp (Np-O) 11.77
+N3p (N2-Np) 2.6
+N3p (N2p-N) 3.65
+N2Op (NO-Np) 6.57
+N2Op (N2-Op) 2.4
+N2Op (NO-Np) 1.3
+NO2p (N-O2p) 6.8
+NO2p (Np-O2) 9.25
+NO2p (NOp-O) 2.59
+NO2p (NO-Op) 6.95
+N4p (N2-N2p) 0.8
+O4p (O2-O2p) 0.44
+N2O2p (N2-O2p) 0.24
+N2NOp (N2-NOp) 0.2
+N2O3p (N2O-O2p) 0.6
+O2O4p (O2-O4p) 0.28
+O2m (O-Om) 3.22
+O3m (O2-Om) 2.47
+O3m (O-O2m) 3.06
+H2 (H-H) 4.48
+OH (O-H) 4.39
+HO2 (H-O2) 2.04
+HO2 (OH-O) 2.78
+H2O (OH-H) 5.12
+H2O2 (OH-OH) 2.15
+HNO (H-NO) 2.11
+HNO2 (OH-NO) 2.24
+HNO3 (OH-NO2) 1.41
+HNO3 (H-NO3) 1.41
+NH (N-H) 3.6
+NH2 (NH-H) 3.9
+NH3 (NH2-H) 4.07
+NH3 (NH-H2) 4.05 ### is this physical?
+N2H (NH-N) 3.1
+N2H (N2-H) 0.86
+N2H2 (NH-NH) 5.17
+N2H3 (NH-NH2) 2.07
+N2H3 (N2H2-H) 2.24
+N2H4 (N2H3-H) 2.76
+N2H4 (NH2-NH2) 1.78
+H2p (H-Hp) 2.63
+OHp (O-Hp) 4.78
+OHp (Op-H) 4.81
+----------------------
+
+Electron terms for atoms with equivalent-electron configurations
+------------------
+p2 p4 -> 1S 3P 1D (C, O, Np)
+p3 -> 4S 2P 2D (N, Op)
+---------------------
+
+Energies of Low Terms of H Atoms (eV)
+-------------------------
+H(n=1) g=2, 0
+H(n=2) g=8, 10.20436
+H(n=3) g=18, 12.09406
+H(n=4) g=32, 12.75545
+----------------------
+
+Energies of Low Terms of N Atoms (eV)
+--------------------------
+N(2S3/2) 0 
+N(2D3/2) 2.384
+N(2D5/2) 2.385
+N(2P1/2,3/2) 3.576
+N(4P1/2) 10.326
+N(4P3/2) 10.33
+N(4P5/2) 10.332
+
+N(2D,5/2,3/2) g=10 2.3838
+N(2P,3/2,1/2) g=6, 3.5757
+-----------------------
+
+Energies of Low Terms of O Atoms (eV)
+--------------------
+O(3P2) 0 
+O(3P1) 0.0197
+O(3P0) 0.0281
+O(1D2) 1.967
+O(1S0) 4.19
+O(5S) 9.146
+O(3S) 9.521
+-----------------
+
+
+
+
+N2 States
+# Note 1: First state is ground state
+# Note 2: Upper cases are triplets
+# Note 3: Lower cases are singlets
+---------------------
+N2(X1,SIG,g+) 0.00
+N2(V1) 0.29
+N2(V2) 0.59
+N2(V3) 0.88
+N2(V4) 1.17
+N2(V5) 1.41
+N2(V6) 1.76
+N2(V7) 2.06
+N2(V8) 2.35
+N2(A3,SIG,u+) 6.17
+N2(B3,PI,g) 7.35
+N2(W3,DEL,u) 7.36
+N2(Bp3,SIG,u-) 8.16
+N2(C3,PI,u) 11.03
+N2(E3,SIG,g+) 11.88
+N2(Cp3,PI,u) 12.08
+N2(F3,PI,u) 12.75
+N2(G3,PI,u) 12.80
+N2(D3,SIG,u+) 12.85
+N2(M1(2)) 13.15 
+N2(G3,DEL,g) ???
+N2(ap1,SIG,u-) 8.40
+N2(a1,PI,g) 8.55
+N2(w1,DEL,u) 8.89
+N2(app1,SIG,g+) 12.25
+N2(b1,PI,u) 12.5
+N2(bp1,SIG,u+) 12.85
+N2(c1,PI,u) 12.91
+N2(cp1,SIG,u+) 12.94
+N2(o1,PI,u) 13.1
+N2(e1,PI,u) 14.33
+N2(c31,PI,u) ???
+N2(c4p1,SIG,u+) ???
+N2(sum_singlets) 13.00
+-----------------------
+
+N2p States
+Note 1: First state is ionization from N2
+Note 2: I don't think the same singlet-triplet rule applies
+----------------------
+N2p(X2,SIG,g+) 15.58
+N2p(A2,PI,u) 16.73
+N2p(B2,SIG,u+) 18.75
+N2p(D2,PI,g) 22.00
+N2p(C2,SIG,u+) 23.60
+---------------------
+
+O States
+-----------------
+O(2p1,D0) 1.96
+O(2p1,S0) 4.19 ### does 1 = 2p1?
+O(3s5,S0) 9.14 ### 5 = 3s5?
+O(3s3,S0) 9.52 ### 3 = 3s3?
+O(3p5,P) 10.7
+O(3p3,P) 11
+O(3d3,D0) 12.03
+O(3s3,D0) 12.48
+----------------
+
+O2 States
+Note 1: First state is ground state
+Note 2: Upper cases are triplets 
+Note 3: Lower cases are singlets 
+---------------------
+O2(X3,SIG,g-) 0.00
+O2(V1) 0.19
+O2(V2) 0.37
+O2(V3) 0.56
+O2(V4) 0.74
+O2(a1,DEL,g) 0.98
+O2(b1,SIG,g+) 1.63
+O2(c1,SIG,u-) 4.5
+O2(Ap3,DEL,u) 4.5
+O2(A3,SIG,u+) 4.5
+O2(B3,SIG,u-) 7.1
+--------------------
+
+O2p States 
+Note 1: First state is ionization from N2
+Note 2: Might be upper = quartet, lower = duplet?
+Note 3: There are some other ones listed but I'm very much confused
+--------------------
+O2p(X3,PI,g) 12.1
+O2p(A2,PI,u) 16.9
+O2p(a4,PI,u) 16.1
+O2p(b4,SIG,g-) 18.2
+---------------------
+
+
+
+
+
 
 Hydrogen
 -----------------------
+
 Hp 13.6 eV
 H(n=2) 15.0 eV
 H(n=3) 16.6 eV 
