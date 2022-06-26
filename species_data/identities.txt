@@ -98,7 +98,11 @@ N2O4, Polyatomic, 92.010, 0
 N2O5, Polyatomic, 108.009, 0
 -----------------------------------
 
-Data Obtained from Atmospheric Gases Plasma Book
+Data Obtained from:
+Capitelli et al - "Plasma Kinetics in Atmospheric Gases"
+Capitelli et al - "Fundamental Aspects of Plasma Chemical Physics: Kinetics"
+Capitelli et al - "Fundamental Aspects of Plasma Chemical Physics: Thermodynamics"
+
 
 Ionization Potentials (eV)
 -------------------
