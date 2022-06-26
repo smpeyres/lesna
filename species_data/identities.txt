@@ -98,13 +98,84 @@ N2O4, Polyatomic, 92.010, 0
 N2O5, Polyatomic, 108.009, 0
 -----------------------------------
 
-Water Clusters
----------------
+Excited Species 
+-----------------------------
 
+Hydrogen
+-----------------------
+Hp 13.6 eV
+H(n=2) 15.0 eV
+H(n=3) 16.6 eV 
+H2(JO-2) 0.044 eV
+H2(J1-3) 0.073 eV
+H2(V1) 0.516 eV
+H2(V2) 1 eV
+H2(V3) 1.5 eV
+H2(B3SIG) 8.9 eV
+H2(B1SIG) 11.3 eV 
+H2(C3PI) 11.75 eV 
+H2(A3SIG) 11.8 eV
+H2(C1PI) 12.4 eV 
+H2(G1SIG) 13.86 eV 
+H2(D3PI) 14.0 eV 
+H2(RYDBERG_SUM) 15.2 eV
+H2p 15.4 eV
+------------------------
 
+Water Vapor
+-----------------
+H2O(V1) 0.198 eV
+H2O(V2) 0.469 eV
+H2Op 12.6 eV
+-----------------
 
+Nitrogen 
+-------------------------
+N2(rot) 0.02 eV 
+N2(V1) 0.291
+N2(V2) 0.59 eV 
+N2(V3) 0.88 eV 
+N2(V4) 1.17 eV 
+N2(V5) 1.47 eV 
+N2(V6) 1.76 eV 
+N2(V7) 2.06 eV 
+N2(V8) 2.35 eV
+N2(A3SIG,v0-4) 6.17 eV 
+N2(A3SIG,v5-9) 7 eV 
+N2(B3PI) 7.35 eV
+N2(W3DEL) 7.36 eV 
+N2(A3SIG,v10-) 7.8 eV 
+N2(B'3SIG) 8.16 eV
+N2(a'1) 8.4 eV 
+N2(a1) 8.55 eV 
+N2(w1DEL) 8.89 eV 
+N2(C3PI) 11.03 eV 
+N2(E3SIG) 11.87 eV 
+N2(a"1) 12.25 eV
+N2(SUM_SING) 13 eV
+N2p 15.6 eV
+N2p(B2SIG) 18.8 eV
+--------------------------
 
+Nitrous Oxide
+-----------------
+NO(V1) 0.3 eV 
+NO(V2) 0.45 eV 
+NO(V3) 0.75 eV 
+NO(V4) 0.9 eV 
+NO(V5) 1.2 eV 
+NO(V6) 1.35 eV
+-----------------
 
+Oxygen
+----------------
+O2(rot) 0.02 eV
+O2(V1) 0.19 eV 
+O2(V2) 0.38 eV
+O2(V3) 0.57 eV 
+O2(V4) 0.75 eV 
+O2p 12.06 eV 
+-----------------
 
 
 
