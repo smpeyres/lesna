@@ -1,3 +1,77 @@
+This database reviews and tabulates rate coefficients
+of heavy-species reactions for use in plasma chemistry
+simulations. Heavy-species reactions are restricted to
+the reactions of atoms, molecules, and ions without the
+scattering, absorption, or release of electrons.
+
+
+Database Categories:
+    [#A] - Atmospheric Chemistry
+    [#C] - Combustion Chemistry
+    [#P] - Plasma Chemistry
+Database Rules (as of June 27th, 2022):
+    1. The database must be self-contained. In 
+        other words, it must not reference a
+        previous database, supplement, edition,
+        etc that requires the user to view in 
+        order to obtain information. References
+        should only be used as a metric of honesty
+        to allow users to verify the values provided.
+    2. Rate coefficients must be provided with
+        a temperature range for which the value
+        or function is appropriate. Databases 
+        in which a temperature range is not
+        provided are rejected. 
+
+Modeling Work Categories:
+    [#M] - Plasma Modeling
+Modeling Work Rules (as of June 27th, 2022):
+    1. For now, only plasma models are accepted.
+        Emphasis will be placed on models of
+        high-pressure plasmas. 
+    2. Rate coefficients written in terms of 
+        ion temperature are rejected.
+    3. The work in which the model is presented
+        must be the location of the reaction data.
+        Modeling works that mereley reference another work's
+        reaction network are rejected.
+    4. The work must declare the gas temperatures used
+        in simulation. If a gas temperature is not listed, 
+        the work is rejected. 
+    5. The rate coefficients provided are only assumed
+        to be "valid" at the temperatures used within the 
+        work, unless a note is provided by the reaction and
+        its respective rate coefficient with an appropriate
+        temperature range. 
+
+Atmospheric Chemistry Data - IUPAC [1A]
+-----------------------------------------------
+All heavy-species reaction data is provided 
+through https://iupac.aeris-data.fr/en/home/
+Accessed June 27th, 2022
+14:05 Central Time, United States
+
+The data provider does not wish for the 
+datasheets to be distributed. Whoever wants 
+to view the raw datasheets must download them 
+from their website, given above.
+-----------------------------------------------
+
+Atmospheric Chemistry Data - JPL/NASA [2A]
+-----------------------------------------------
+NASA's Jet Propulsion Lab currently provides
+evaluated chemical kinetics data for 
+atmospheric sciences, with each new evaluation
+completely replacing the previous. 
+The 19th Evaluation, completed in 2020, was
+obtained from https://jpldataeval.jpl.nasa.gov/
+Accessed June 27th, 2022
+14:12 Central Time, United States
+-----------------------------------------------
+
+
+
+
 [1]  https://doi.org/10.1063/1.555940
     page 1473 complete
 [2] https://doi.org/10.1063/1.555832
@@ -8,6 +82,9 @@
     Reaction 8 complete
 [5] 
     reaction 1149 complete
+
+
+Notes
 
 [A] https://doi.org/10.1063/1.1455139
     Complete
