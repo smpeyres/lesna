@@ -154,17 +154,11 @@ Formatting:
         are written next to tabulated rate coeff.
         on the right, along with the reference 
         number-letter.
-    3. The reactions organized such that the
-        reactants and products are organized 
-        lightest -> heaviest. This is to avoid
-        duplication.
-    4. For excited species, they are presented
-        in order of energy following the ground state. 
-        If energy is not known, then alphabetically 
-        by notation.
-    5. For ionic species, positive species are
-        listed after all tabulated excited species.
-        Negative species are listed after the positive.
+    3. The reaction ordering is such that it 
+        corresponds with the order species are presented
+        in identities.txt. This ordering scheme also 
+        applies to the left and right hand sides of 
+        each reaction. 
 
 
 All reaction rates are written in terms of m^x/s
@@ -213,6 +207,9 @@ N + OH -> H + NO
 N + OH -> NH + O
     0 (no direct measurements of this channel) [C3]
 
+N + N2+ -> N+ + N2
+    2.4e-21*Tg, 200-500 K [1P]
+
 N + NO -> O + N2
     3.5e-17, 210-3700 K [3C]
     1.05e-18*T^(0.5), 200-500 K [1P]
@@ -224,6 +221,12 @@ N + O2 -> O + NO
 
 N + O2(a) -> O + NO
     2e-20*exp(-600/Tg), 200-500 K [1P]
+
+N + O2+ -> O + NO+
+    1.2e-16, 200-500 K [1P
+
+N + N3+ -> N2 + N2+
+    6.6e-17, 200-500 K [1P]
 
 N + NO2 -> O + N2O
     3e-18, 200-500 K [1P]
@@ -240,31 +243,12 @@ N + NO2 -> NO + NO
 N + O3 -> NO + O2
     2e-22, 200-500 K [1P]
 
-
-
-
-
-
------------------------------------------
-
-N2+ + N -> N+ + N2
-    2.4e-21*Tg, 200-500 K [1P]
-
-O2+ + N -> NO+ + O
-    1.2e-16, 200-500 K [1P]
-
-N3+ + N -> N2+ + N2
-    6.6e-17, 200-500 K [1P]
-
-N4+ + N -> N+ + N2 + N2
+N + N4+ -> N+ + N2 + N2
     1e-17, 200-500 K [1P]
---------------------------------------------------
 
-N(4S) Reactions (14.007, ? eV)
---------------------------------------------------
-N2(A) + N(4S) -> N2(X) + N(2P)
+N(4S) + N2(A) -> N(2P) + N2(X)
     5.0e-17, 200-500 K [1P]
---------------------------------------------------
+
 
 N(2D) Reactions (14.007, ? eV)
 --------------------------------------------------
