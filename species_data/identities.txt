@@ -1,101 +1,104 @@
-Species, Type, Mass (u), Charge
-------------------------------------
-H, Atomic, 1.008, 0
-Hp, Atomic Ion, 1.008, +1
-Hm, Atomic Ion, 1.008, -1
+Species, Type, Mass (u), Charge, Energy (eV)
+-------------------------------------------
+H, Neutral, 1.008, 0, 0
+H+, Ion, 1.008, +1, 13.59 
+H-, Ion, 1.008, -1, ? 
 
-H2, Diatomic, 2.016, 0
-H2p, Diatomic Ion, 2.016, +1
-H2m, Diatomic Ion, 2.016, -1
+H2, Neutral, 2.016, 0, 0
+H2+, Ion, 2.016, +1, 15.44
+H2-, Ion, 2.016, -1, ?
 
-H3p, Polyatomic Ion, 3.024, +1
+H3+, Ion, 3.024, +1, ?
 
-N, Atomic, 14.007, 0
-Np, Atomic Ion, 14.007, +1
+N, Neutral, 14.007, 0, 0
+N(2P), Neural, 14.007, 0, ?
+N+, Ion, 14.007, +1, 14.53 
 
-NH, Diatomic, 15.015, 0
-NHp, Diatomic Ion, 15.015, +1
 
-O, Atomic, 15.999, 0
-Op, Atomic Ion, 15.999, +1
-Om, Atomic Ion, 15.999, -1
 
-NH2, Polyatomic, 16.023, 0
-NH2p, Polyatomic Ion, 16.023, +1
+NH, Neutral, 15.015, 0
+NHp, Ion, 15.015, +1
 
-OH, Diatomic, 17.007, 0
-OHp, Diatomic Ion, 17.007, +1
-OHm, Diatomic Ion, 17.007, -1
+O, Neutral, 15.999, 0
+Op, Ion, 15.999, +1
+Om, Ion, 15.999, -1
 
-NH3, Polyatomic, 17.031, 0
-NH3p, Polyatomic Ion, 17.031, +1
+NH2, Neutral, 16.023, 0
+NH2p, Ion, 16.023, +1
 
-H2O, Polyatomic, 18.015, 0
-H2Op, Polyatomic Ion, 18.015, +1
+OH, Neutral, 17.007, 0
+OHp, Ion, 17.007, +1
+OHm, Ion, 17.007, -1
 
-NH4p, Polyatomic Ion, 18.039, +1
+NH3, Neutral, 17.031, 0
+NH3p, Ion, 17.031, +1
 
-H3Op, Polyatomic Ion, 19.023, +1
+H2O, Neutral, 18.015, 0
+H2Op, Ion, 18.015, +1
 
-N2, Diatomic, 28.014, 0
-N2p, Diatomic Ion, 28.014, +1
+NH4p, Ion, 18.039, +1
 
-N2Hp, Polyatomic Ion, 29.022, +1
+H3Op, Ion, 19.023, +1
 
-NO, Diatomic, 30.006, 0
-NOp, Diatomic Ion, 30.006, +1
-NOm, Diatomic Ion, 30.006, -1
+N2, Neutral, 28.014, 0
+N2p, Ion, 28.014, +1
 
-HNO, Polyatomic, 31.014, 0
+N2Hp, Ion, 29.022, +1
 
-O2, Diatomic, 31.998, 0
-O2p, Diatomic Ion, 31.998, +1
-O2m, Diatomic Ion, 31.998, -1
+NO, Neutral, 30.006, 0
+NOp, Ion, 30.006, +1
+NOm, Ion, 30.006, -1
 
-HO2, Polyatomic, 33.006, 0
+HNO, Neutral, 31.014, 0
+
+O2, Neutral, 31.998, 0
+O2p, Ion, 31.998, +1
+O2m, Ion, 31.998, -1
+
+HO2, Neutral, 33.006, 0
 
 H2O2, Polaytomic, 34.014, 0
 H2O2m, Polaytomic Ion, 34.014, -1
 
-H3O2m, Polyatomic Ion, 35.022, -1
+H3O2m, Ion, 35.022, -1
 
-N3p, Polyatomic Ion, 42.021, +1
+N3p, Ion, 42.021, +1
 
-N2O, Polyatomic, 44.013, 0 
-N2Op, Polyatomic Ion, 44.013, +1
+N2O, Neutral, 44.013, 0 
+N2Op, Ion, 44.013, +1
 
-NO2, Polyatomic, 46.005, 0
-NO2p, Polyatomic Ion, 46.005, +1
-NO2m, Polyatomic Ion, 46.005, -1
+NO2, Neutral, 46.005, 0
+NO2p, Ion, 46.005, +1
+NO2m, Ion, 46.005, -1
 
-HNO2, Polyatomic, 47.013, 0
+HNO2, Neutral, 47.013, 0
 
-O3, Polyatomic, 47.997, 0
-O3p, Polyatomic Ion, 47.997, +1
-O3m, Polyatomic Ion, 47.997, -1
+O3, Neutral, 47.997, 0
+O3p, Ion, 47.997, +1
+O3m, Ion, 47.997, -1
 
-H2O3m, Polyatomic Ion, 50.013, -1
+H2O3m, Ion, 50.013, -1
 
-N4p, Polyatomic Ion, 56.028, +1
+N4p, Ion, 56.028, +1
 
-N2O2p, Polyatomic Ion, 60.012, 0
+N2O2p, Ion, 60.012, 0
 
-NO3, Polyatomic, 62.004, 0
-NO3m, Polyatomic Ion, 62.004, -1
+NO3, Neutral, 62.004, 0
+NO3m, Ion, 62.004, -1
 
-HNO3, Polyatomic, 63.012, 0
+HNO3, Neutral, 63.012, 0
 
-O4p, Polyatomic Ion, 63.996, +1
+O4p, Ion, 63.996, +1
 
-H2O4m, Polyatomic Ion, 66.012, -1
+H2O4m, Ion, 66.012, -1
 
 N2O3, Polatomic, 76.011, 0
 
-HNO4, Polyatomic, 79.011, 0
+HNO4, Neutral, 79.011, 0
 
-N2O4, Polyatomic, 92.010, 0
+N2O4, Neutral, 92.010, 0
 
-N2O5, Polyatomic, 108.009, 0
+N2O5, Neutral, 108.009, 0
 -----------------------------------
 
 Data Obtained from:

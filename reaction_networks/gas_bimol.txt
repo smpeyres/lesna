@@ -146,29 +146,47 @@ especially functions for rate coeffs with
 fitting parameters.
 -----------------------------------------------
 
-
+Formatting:
+    1. All rate coefficients are written in terms
+        of m^x/s 
+    2. All temperature ranges for databases and 
+        temperatures modeled for modeling works
+        are written next to tabulated rate coeff.
+        on the right, along with the reference 
+        number-letter.
+    3. The reactions organized such that the
+        reactants and products are organized 
+        lightest -> heaviest. This is to avoid
+        duplication.
+    4. For excited species, they are presented
+        in order of energy following the ground state. 
+        If energy is not known, then alphabetically 
+        by notation.
+    5. For ionic species, positive species are
+        listed after all tabulated excited species.
+        Negative species are listed after the positive.
 
 
 All reaction rates are written in terms of m^x/s
 
-H Reactions (1.008)
 --------------------------------------------------
+
+H + H2O -> H2 + OH
+    7.5e-22*Tg^(1.6)*exp(-9030/Tg), 800-2500 K [3C]
+
+H + O2 -> O + OH
+    3.43e-16*Tg^(-0.097)*exp(-7560/Tg), 800-3500 K [3C]
+
 H + HO2 -> H2 + O2
     5.6e-18, 245-300 K [1A]
     1.75e-16*exp(-1030/Tg), 250-1000 K [3C]
 
+H + HO2 -> O + H2O
+    2.4e-18, 245-300 K [1A]
+
 H + HO2 -> OH + OH
     7.2e-17, 245-300 K [1A]
     7.4e-16*exp(-700/Tg), 250-1000 K [3C] 
-
-H + HO2 -> H2O + O
-    2.4e-18, 245-300 K [1A]
-
-H + O2 -> OH + O
-    3.43e-16*Tg^(-0.097)*exp(-7560/Tg), 800-3500 K [3C]
-
-H + H2O -> OH + H2
-    7.5e-22*Tg^(1.6)*exp(-9030/Tg), 800-2500 K [3C]
 
 H + H2O2 -> H2 + HO2
     2.8e-18*exp(-1890/Tg), 280-1000 K [3C]
@@ -178,65 +196,56 @@ H + H2O2 -> OH + H2O
 
 H + NO2 -> OH + NO
     4.2e-16*exp(-340/Tg), 230-800 K [3C]
---------------------------------------------------
 
-H+ Reactions (1.008, 13.59 eV)
---------------------------------------------------
+H2 + O -> H + OH
+    (6.34e-18*exp(-4000/Tg) + 1.46e-15*exp(-9650/Tg)), 298-3300 K [3C]
 
---------------------------------------------------
-
-H2 Reactions (2.016)
---------------------------------------------------
-OH + H2 -> H2O + H
+H2 + OH ->  H + H2O
     7.7e-18*exp(-2100/Tg), 200-450 K [1A]
     3.6e-22*Tg^(1.52)*exp(-1740/Tg), 250-2500 K [3C]
 
-O + H2 -> OH + H
-    (6.34e-18*exp(-4000/Tg) + 1.46e-15*exp(-9650/Tg)), 298-3300 K [3C]
---------------------------------------------------
+N + N(2P) -> N + N(2D)
+    1.8e-18, 200-500 K [1P]
 
-H2+ Reactions (2.016, 15.44 eV)
---------------------------------------------------
-
---------------------------------------------------
-
-N Reactions (14.007)
---------------------------------------------------
-N + O2 -> NO + O
-    9.7e-21*Tg^(1.01)*exp(-3120/Tg), 280-5000 K [C3]
-    4.2e-18*exp(-3220/Tg), 200-300 K [1P]
-    1.1e-20*Tg*exp(-3150/Tg), 300-500 K [1P]
-
-N + OH -> NO + H
+N + OH -> H + NO
     1.8e-16*Tg^(-0.2), 100-2500 K [C3]
 
 N + OH -> NH + O
     0 (no direct measurements of this channel) [C3]
 
-N + NO -> N2 + O
+N + NO -> O + N2
     3.5e-17, 210-3700 K [3C]
     1.05e-18*T^(0.5), 200-500 K [1P]
 
-N + O3 -> NO + O2
-    2e-22, 200-500 K [1P]
+N + O2 -> O + NO
+    9.7e-21*Tg^(1.01)*exp(-3120/Tg), 280-5000 K [C3]
+    4.2e-18*exp(-3220/Tg), 200-300 K [1P]
+    1.1e-20*Tg*exp(-3150/Tg), 300-500 K [1P]
+
+N + O2(a) -> O + NO
+    2e-20*exp(-600/Tg), 200-500 K [1P]
+
+N + NO2 -> O + N2O
+    3e-18, 200-500 K [1P]
+
+N + NO2 -> O + O + N2
+    9.1e-19, 200-500 K [1P]
 
 N + NO2 -> N2 + O2
     7e-19, 200-500 K [1P]
 
-N + NO2 -> N2 + O + O
-    9.1e-19, 200-500 K [1P]
-
-N + NO2 -> N2O + O
-    3e-18, 200-500 K [1P]
-
 N + NO2 -> NO + NO
     2.3e-18, 200-500 K [1P]
 
-O2(a) + N -> NO + O
-    2e-20*exp(-600/Tg), 200-500 K [1P]
+N + O3 -> NO + O2
+    2e-22, 200-500 K [1P]
 
-N(2P) + N -> N(2D) + N
-    1.8e-18, 200-500 K [1P]
+
+
+
+
+
+-----------------------------------------
 
 N2+ + N -> N+ + N2
     2.4e-21*Tg, 200-500 K [1P]
