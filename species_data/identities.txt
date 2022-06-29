@@ -31,44 +31,42 @@ OH, Neutral, 17.007, 0, 0
 
 NH3, Neutral, 17.031, 0, 0
 
-
--------------------------
-NH3p, Ion, 17.031, +1
-
-H2O, Neutral, 18.015, 0
-H2Op, Ion, 18.015, +1
-
-NH4p, Ion, 18.039, +1
-
-H3Op, Ion, 19.023, +1
+H2O, Neutral, 18.015, 0,0
 
 N2, Neutral, 28.014, 0, 0
-N2(X), Neutral, 28.014, 0, ?
-N2p, Ion, 28.014, +1
+N2(X), Exc, 28.014, 0, ?
+N2(A), Exc, 28.014, 0, ?
+N2(B), Exc, 28.014, 0, ?
+N2(C), Exc, 28.014, 0, ?
+N2(ap), Exc, 28.014, 0, ?
+N2+, Ion, 28.014, +1, 15.58
 
-N2Hp, Ion, 29.022, +1
+NO, Neutral, 30.006, 0, 0
+NO+, Ion, 30.006, +1, 9.26
+NO-, Ion, 30.006, -1, ?
 
-NO, Neutral, 30.006, 0
-NOp, Ion, 30.006, +1
-NOm, Ion, 30.006, -1
 
-HNO, Neutral, 31.014, 0
+O2, Neutral, 31.998, 0, 0
+O2(1,DEL,g), Exc, 31.998, 0, ?
+O2(a), Exc, 31.998, 0, ?
+O2(a,c,C), Exc, 31.998, 0, ?
+O2(b), Exc, 31.998, 0, ?
+O2+, Ion, 31.998, +1, 12.08 
+O2-, Ion, 31.998, -1, ?
 
-O2, Neutral, 31.998, 0
-O2p, Ion, 31.998, +1
-O2m, Ion, 31.998, -1
+HO2, Neutral, 33.006, 0, 0
 
-HO2, Neutral, 33.006, 0
+H2O2, Neutral, 34.014, 0, 0 
 
-H2O2, Polaytomic, 34.014, 0
-H2O2m, Polaytomic Ion, 34.014, -1
+N3+, Ion, 42.021, +1, 11.5
 
-H3O2m, Ion, 35.022, -1
+N2O, Neutral, 44.013, 0, 0
+N2O+, Ion, 44.013, +1, 12.89 
+N2O-, Ion, 44.013, -1, ?
 
-N3p, Ion, 42.021, +1
 
-N2O, Neutral, 44.013, 0 
-N2Op, Ion, 44.013, +1
+----
+
 
 NO2, Neutral, 46.005, 0
 NO2p, Ion, 46.005, +1
