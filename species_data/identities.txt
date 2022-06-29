@@ -64,19 +64,14 @@ N2O, Neutral, 44.013, 0, 0
 N2O+, Ion, 44.013, +1, 12.89 
 N2O-, Ion, 44.013, -1, ?
 
+NO2, Neutral, 46.005, 0, 0
+NO2+, Ion, 46.005, +1, ?
+NO2-, Ion, 46.005, -1, ?
 
-----
+HONO, Neutral, 47.013, 0, 0
 
-
-NO2, Neutral, 46.005, 0
-NO2p, Ion, 46.005, +1
-NO2m, Ion, 46.005, -1
-
-HNO2, Neutral, 47.013, 0
-
-O3, Neutral, 47.997, 0
-O3p, Ion, 47.997, +1
-O3m, Ion, 47.997, -1
+O3, Neutral, 47.997, 0, 0
+O3-, Ion, 47.997, -1, ? 
 
 H2O3m, Ion, 50.013, -1
 
