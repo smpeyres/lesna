@@ -1,0 +1,39 @@
+IN PROGESS - Jun 29, 2022
+
+STEP 0 Hydrogen
+- Excited states of H and H2 are lumped into one each
+- H3+ is ignored
+----------------------------------------------
+
+# e + H 
+em + H -> em + H          : EEDF [elastic] ()
+em + H -> em + H*         : ?
+em + H -> em + em + Hp    : EEDF [-13.6] ()
+em + H* -> em + em + Hp   : ?
+em + Hm -> em + em + H    : ?
+
+# e + H2
+em + H2 -> em + H2        : EEDF [elastic] ()
+em + H2 -> em + H2*       : ?
+em + H2 -> em + em + H2p  : EEDF [-15.4] ()
+em + H2 -> em + H + H     : ?
+em + H2 -> em + H + H*    : ?
+em + H2 -> em + H* + H*   : ?
+em + H2 -> H + Hm         : ?
+em + H2* -> em + em + H2p : ?
+em + H2p -> em + H + Hp   : ?
+em + H2p -> H + H         : ?
+
+# H + H
+Hp + Hm -> H + H          : ?
+
+# H + H2
+H* + H2p -> Hp + H2       : ?
+Hp + H2* -> H + H2p       : ?
+Hm + H2p -> H + H + H     : ?
+
+----------------------------------------------
+
+         
+
+

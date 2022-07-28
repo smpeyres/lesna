@@ -1,0 +1,340 @@
+Welcome to Lesna!
+
+--------------------------------------------------
+This toolbox is inspired by Prof. Mark Kushner's 
+1999 GEC presentation "Strategies for Rapidly 
+Developing Plasma Chemistry Models"
+
+Can find it here (number 29):
+https://uigelz.eecs.umich.edu/presentations.html
+
+While this presentation is directed for use in
+the microelectronics industry, the strategies 
+presented have obvious utility in all areas of 
+plasma chemistry! 
+
+Elemenets of the Toolbox 
+1. Databases
+2. Database Processor
+3. Reaction Mechanisms
+4. A Basic Global Plasma Model
+5. Visualizer and Post-Processor
+
+--------------------------------------------------
+
+What is in the Database?
+- Ion and Neutral transport coefficients
+- Electron-impact cross sections
+- Heavy particle reaction coefficients
+- Surface/interface reaction probablities
+
+- Should be as "raw" and unprocessed as possible!
+
+--------------------------------------------------
+
+What is in a Database Processor?
+- Primarily, a Boltzmann solver! (BOLSIG+, BOLOS)
+- He also mentions a Maxwellian "integrator" of 
+    cross sections but I'm not sure what this 
+    means!
+- This is will not be the focus of Lesna, but 
+    Lesna is designed to encourage rapid use of 
+    these tools
+
+--------------------------------------------------
+
+What is in the Reaction Mechanisms?
+- A collection of previously used (and hopefully 
+    validated) reaction mechanisms
+- Scaling laws or IYMG (if you must guess) 
+    procedures for generating unavailable data
+
+--------------------------------------------------
+
+What is in a Basic Global Plasma Model?
+- A rapid and error-less method to convert a 
+    reaction mechanism into ODE's and PDE's
+- A method to convert "power" into "excitation" 
+    (circuit model, EM solver)
+- Robust integration technique
+- 1D, 2D as required
+- This is taken care of with ZAPDOS-CRANE!
+- Again, Lesna is designed to encourage rapid use 
+    of these tools. 
+
+--------------------------------------------------
+
+What is in a Visualizer and Post-Processor?
+- A standardized, rapid way to display and 
+    manipulate the results.
+- Lesna will include python scripts to process
+    csv files from CRANE to visualize results
+
+--------------------------------------------------
+
+In constructing a database, follow said rules:
+1. Take FULL advantage of all external resources 
+    in building your database.
+2. Devise a standard method of formatting, 
+    reference, tracking, revisions, and updates 
+    which best suit YOUR needs.
+3. You will need to make value judgments on 
+    goodness, appropriateness, and validity of 
+    primary data sources or other databases.
+4. Make these decisions with some delibrate 
+    forethought as to what the database (or 
+    subsets) of the database will be used for.
+
+Remember, data requirements are very different
+based on the desired outcome! Incomplete data is
+not a bad thing if it is not needed...
+
+--------------------------------------------------
+
+For ease of use in BOLOS/BOLSIG+, all cross 
+sections will be eV / m^2.
+For ease of use in CRANE-ZAPDOS, all mass, 
+transport, and reaction data will be in SI units 
+(m, kg, s, V, etc).
+
+Reaction data will focus primarily on, in the 
+following order of importance:
+    "Air" plasmas 
+        (N2/O2)
+    Humid "air" plasmas 
+        (N2/O2/H2O)
+    "Air" plasma - liquid water 
+        (N2/O2/H2O + Aqueous)
+    True air plasmas
+        (N2/O2/H2O/CO2/Ar)
+    True air plasma - liquid water
+        (N2/O2/H2O/CO2/Ar + Aqueous)
+
+--------------------------------------------------
+
+Sources of Data: Electron-Impact
+- Phelps Database
+- Morgan Database
+- All of LXCat!
+
+--------------------------------------------------
+
+Sources of Data: Neutral Chemistry
+
+Rate Coefficients 
+- NIST Chemical Kinetics Database (I personally
+     don't like)
+- International Journal of Chemical Kinetics
+- Journal of Physical Chemistry A
+- Journal of Atmospheric Chemistry
+- Journal of Physical and Chemical Ref. Data (Love!)
+
+Reaction Mechanisms (Combustion lit)
+- Combustion and Flame
+- International Journal of Chemical Kinetics
+- AIAA Journal
+- Models outside your application are with the 
+    same species
+- Collect everything that key individuals have 
+    ever published in the field for specific 
+    chemistries (he gives example of Jerome Perrin
+    for silane plasma chemistry)
+    - Who would my area be?
+
+--------------------------------------------------
+
+Sources of Data: Ion Transport and Ion-Molecule
+
+Mobilities and diffusivities vs E/N (or T(eff))
+- In ZAPDOS, ions only have isotropic 
+    transport coefficients. I think T(eff) 
+    would work best, but I don't know how 
+    T(eff) works! 
+    - This might help: 
+        https://doi.org/10.1006/adnd.1995.1004
+
+Rate Coefficients for Ion:
+- J. Phys. Chem. Ref. Data
+
+--------------------------------------------------
+
+Generic Plasma Chemistry Model 
+
+Your tool box should include a generic plsama
+chemistry model in which all parameters, 
+chemistries, and operating conditions are defined
+"from the outside" to facilitate rapid turnaround
+of reaction mechanisms!
+
+These might be good reads:
+    https://doi.org/10.1116/1.579494
+    https://doi.org/10.1149/1.2054960
+    https://doi.org/10.1109/27.467973
+
+--------------------------------------------------
+
+Demonstration Reactor 
+
+Kushner suggests the use of a small ICP reactor
+for demonstration and illustration purposes. In 
+my case, I think a simple 1D or 2D model of a DC 
+plasma would work great!
+
+--------------------------------------------------
+
+Develop a Reaction Mechanism which Aligns with
+What You Need to Know
+
+- Time required scales with size and complexity
+- Completeness of reaction mechanism (I think a 
+    better word would be network) should correlate
+    with the end product of modeling
+- What do you really need to know and to what
+    accuracy? What data is required to meet goal?
+
+--------------------------------------------------
+
+Make Back of the Envelope Estimates to Refine
+(Limit) Your Reaction Network 
+
+You always know upper and lower bounds of reaction
+rate coeffs:
+    - Ionizate rate coeffs are never much bigger
+        than 1e-10 cm3/s (1e-16 m3/s)
+    - Momentum transfer rate coeffs never much
+        smaller than 1e-10 cm^3/s (1e-16 m3/s)
+        - Of electrons? or Heavy species?
+
+Given these bounds, can you make back-of-envelope 
+estimates to determine how much detail is required 
+in your reaction network?
+
+He gives example of N in N2 with basic rate equations
+to get N/N2, but I'm not sure what to do with 
+residence time...
+
+--------------------------------------------------
+
+How do you deal with mixtures?
+
+- In large part, if molecules are large enough, 
+    momentum transfer and power deposied into given
+    component of molecular gas mixture scales with
+    mole fraction
+- But adding mixtures generates species which would
+    not have otherwise been there! These species
+    can be very reactive!
+
+--------------------------------------------------
+
+General Scaling Laws: Ion-Ion Neutralization
+
+- All negative ions neutralize with positive ions
+    provided that E_IP > E_EA (ionization and 
+    electron affinity, I think)
+    - GET IONIZATION ENERGY AND ELECTRON AFFINITY
+        INFO!
+- At thermal energies (and low pressures), 
+    neutralization is non-associative 
+    - Why? What about high pressure?
+- IYMG: k = 1e-7 cm3/s = 1e-13 m3/s
+
+--------------------------------------------------
+
+General Scaling Laws: Electron-Ion Recombination
+
+- All molecular ions dissociatively recombine. If
+    Te is not too low (< 300 K) or too high, 
+    sigma(mean_en) = sigma_o/mean_en
+    https://doi.org/10.1016/0370-1573(90)90159-Y
+- IYMG: k = 1e-13*Te^-0.5 m3/s
+
+In low pressure, recombination of atomic ions can
+be generally ignored unless plasma densities 
+are > 10^12 cm-3
+- IYMG (Rad Recomb): k = 5e-19*Te^-0.7 m^3/s
+- IYMG (ColRad Recomb): k = 7e-39*Te^-4.5 m^3/s
+
+--------------------------------------------------
+
+General Scaling Laws: Ion Mobilities 
+
+- Use Lennard Jones parameters to calculate 
+    mobility.
+- IYMG: Choose a LJ radius of similar structured 
+    and sized molecule.
+- Use mixture rules from a transport theory text
+    for additional accuracy.
+- All ions undergo symmetric charge exchange with
+    their neutral. Assume momentum transfer is 
+    dominated by this. If you have chrg-exc cross
+    section, use it for momentum transfe. 
+    Otherwise, assume gas kinetic rates. 
+- If NO additional info, consult 
+    https://doi.org/10.1006/adnd.1995.1004
+- With rare exceptions, at zero-field momentum 
+    transfer cross section is is 5e-20 - 35e-20 m^2
+
+Side note: It seems obvious that a DC global model
+would need a bulk-sheath split, but maybe the ion
+effective temperature can be adjusted for each 
+domain?
+
+--------------------------------------------------
+
+General Scaling Laws: Ion Molecule, Penning, and 
+Excitation Transfer
+
+- If energetically allowed, charge transfer by 
+    positive ions to polyatomic molecules proceeds
+    at the gas kinetic rate (What does this mean? 
+    - Collision frequency? ) 
+    and is dissociative
+    - Branchings are the same as electron impact at
+        the IP of ion (if available) or estimated 
+        from appearance potentials of fragement ions
+    
+- If energetically allowed, Penning processess occur
+    about 0.2 gas kinetic
+
+- Quenching of excited states by polyatomic ions is
+    equivalent to electronic excitation at same
+    energy and is dissociative
+
+--------------------------------------------------
+
+General Scaling Laws: Electron Impact Ionization
+and Excitation
+
+- Electron impact excitation and ionization cross
+    cross sections are the most "species specific"
+
+IYMG:
+- Use the same cross sections for fragments (CF3 vs
+    CF4) until you REALLY feel really uncomfortable,
+    and then deny you did it.
+    - Could this be applied to NO, NO2, NO3?
+- Reduce threshold energies of excited species by
+    the energy.
+    - Use same cross section data, but lower the 
+        threshold energy 
+- If you have input, use Kim cross sections
+- If not, resort to Gryzinski or similar
+- Use Born-Bethe formula (Drawin form) for optically
+    allowed transition for e impact excitation
+    - Does this only apply to electronic states?
+
+--------------------------------------------------
+
+How Do You Link Two Reaction Networks?
+
+1. Examine neutral chemistry for important "cross
+    reactions"
+2. Obtain reaction networks for major products 
+3. If mobilities are not known in the novel mixture, 
+    assume!
+4. Assume all unknown dissociative recomb.
+5. Assume all unknown ion-ion recomb. 
+6. Charge exchange cross sections not known. Obtain
+    thermochemistry, assume gas kinetic.
+
