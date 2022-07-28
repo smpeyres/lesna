@@ -1,0 +1,30 @@
+
+'# All reaction coefficients are in SI units (m^n/s)
+ # Oxygen species (ranked by energy):
+ # Om -> oxygen atomic anion (-1.46 eV)
+ # O2m -> oxygen molecular anion (-0.44 eV) 
+ # O2 -> molecular oxygen, ground state
+ # O(3P) -> atomic oxygen, ground state
+ # O(1D) -> atomic oxygen, metastable (2.0 eV)
+ # O2p -> oxygen molecular cation (12.07 eV)
+ # Op -> oxygen atomic cation (13.6 eV)
+ # --------------------------------------------------------
+ # Electron-impact reactions 
+ # [?] Databases... Select later
+ # --------------------------------------------------------
+ em + Om -> O(3P) + em + em    : EEDF [1.46] (?)
+ em + O2 -> O(3P) + O(1D) + em : EEDF [?] (?)
+ em + O2 -> O(3P) + Om         : EEDF (?)
+ em + O2 -> O(3P) + O(3P) + em : EEDF [?] (?)
+ em + O(3P) -> O(1D) + em      : EEDF [-2.0] (?)
+ em + O(1D) -> Op + em + em    : EEDF [-11.6] (?)
+ em + O2 -> O2p + em + em      : EEDF [-12.07] (?)
+ em + O(3P) -> Op + em + em    : EEDF [-13.6] (?)
+ # --------------------------------------------------------
+ # Heavy-species reactions
+ # --------------------------------------------------------
+ Om + O2p -> O(3P) + O2         : {1.5e-13*(300/Tg)^(-0.5)}
+ Om + Op -> O(3P) + O(3P)       : {2.7e-14*(300/Tg)^(-0.5)}
+ O(1D) + O2 -> O(3P) + O2       : 3.0e-17
+ O(1D) + O(3P) -> O(3P) + O(3P) : 8.1e-18
+ # --------------------------------------------------------'
