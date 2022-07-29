@@ -1,5 +1,80 @@
 Welcome to Lesna!
 
+----------
+Air Plasma References
+
+Kossyi et al (1992)
+Kinetic scheme of the non-equilibrium discharge in nitrogen-oxygen mixtures
+1808 citations
+
+Atkinson et al (2004)
+Evaluated kinetic and photochemical data for atmospheric chemistry: Volume I-gas phase reactions of Ox, HOx, NOx, and SOx species
+1729 citations 
+
+Lee, Lieberman (1995)
+Global model of Ar, O2, Cl2, and Ar/O2 high-density plasma discharges
+613 citations 
+
+Dorai, Kushner (2003)
+A model for plasma modification of polypropylene using atmospheric pressure discharges
+496 citations 
+
+Liu et al (2010)
+Global model of low-temperature atmospheric-pressure He+H2O plasmas
+458 citations 
+
+Sakiyama et al (2012)
+Plasma chemistry model of surface microdischarge in humid aid and dynamics of reactive neutral species
+450 citations
+
+Gordiets et al (1995)
+Kinetic model of a low-pressure N/sub 2/-O/sub 2/flowing glow discharge
+436 citations
+
+Murakami et al (2012)
+Chemical kinetics and reactive species in atmospheric pressure helium-oxygen plasmas with humid-air impurities
+319 citations
+
+Popov (2011)
+Fast gas heating in a nitrogen-oxygen discharge plasma: 1. Kinetic mechanism
+307 citations 
+
+Gordillo-Vasquez (2008)
+Air plasma kinetics under the influence of sprites
+290 citations
+
+Herron, Green (2001)
+Chemical kinetics database and predictive schemes for nonthermal humid air plasma chemistry. Part II. Neutral species reactions
+288 citations
+
+Van Gaens, Bogaerts (2013)
+Kinetic modelling for an atmospheric pressure argon plasma jet in humid air
+285 citations
+
+Gudmundsson et al (2007)
+Oxygen discharges diluted with argon: dissociation processes
+284 citations
+
+Gentile, Kushner (1995)
+Reaction chemistry and optimization of plasma remediation of NxOy from gas streams
+259 citations
+
+Waskoenig et al (2010)
+Atomic oxygen formation in a radio-frequeny driven micro-atmospheric pressure plasma jet
+241 citations
+
+Gudmundsson et al (2001)
+Electronegativity of low-pressure high-density oxygen discharges
+223 citations
+
+Guerra, Loureiro (1997)
+Electron and heavy partile kinetics in a low-pressure nitrogen glow discharge
+223 citations
+
+
+
+
+
 --------------------------------------------------
 This toolbox is inspired by Prof. Mark Kushner's 
 1999 GEC presentation "Strategies for Rapidly 
